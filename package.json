@@ -5,13 +5,11 @@
   "scripts": {
     "serve": "npm run dev:h5",
     "build": "npm run build:h5",
-    "build:h5": "cross-env NODE_ENV=production UNI_PLATFORM=h5 vue-cli-service uni-build",
-    "build:mp-weixin": "cross-env NODE_ENV=production UNI_PLATFORM=mp-weixin vue-cli-service uni-build",
-    "dev:h5": "cross-env NODE_ENV=development UNI_PLATFORM=h5 vue-cli-service uni-serve",
-    "dev:mp-weixin": "cross-env NODE_ENV=development UNI_PLATFORM=mp-weixin vue-cli-service uni-build --watch",
+    "build:h5": "cross-env UNI_PLATFORM=h5 vue-cli-service uni-build --mode production",
+    "build:mp-weixin": "cross-env UNI_PLATFORM=mp-weixin vue-cli-service uni-build --mode production",
+    "dev:h5": "cross-env UNI_PLATFORM=h5 vue-cli-service uni-serve --mode local",
+    "dev:mp-weixin": "cross-env UNI_PLATFORM=mp-weixin vue-cli-service uni-build --watch --mode local",
     "info": "node node_modules/@dcloudio/vue-cli-plugin-uni/commands/info.js",
-    "test:h5": "cross-env UNI_PLATFORM=h5 jest -i",
-    "test:mp-weixin": "cross-env UNI_PLATFORM=mp-weixin jest -i",
     "lf": "find . -type f | grep -v \"node_modules\" | xargs dos2unix"
   },
   "dependencies": {
