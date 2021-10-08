@@ -1,14 +1,20 @@
 <template>
   <view class="content">
-    <image class="logo" src="/static/logo.png" />
+    <image class="logo" src="/static/img/logo.png" />
     <view>
       <text class="title">{{ title }}</text>
     </view>
+    <HelloWorld/>
   </view>
 </template>
 
 <script>
+import HelloWorld from '../../components/HelloWorld/index.vue'
+
 export default {
+  components: {
+    HelloWorld,
+  },
   data() {
     return {
       title: 'Hello1',
