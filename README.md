@@ -1,19 +1,13 @@
-# helloworld-uniapp
+# moedu-uniapp-template
 
 ## Project setup
 ```
-pnpm install
+npm install
 ```
-
-### Compiles and hot-reloads for development
+## 运行
 ```
-pnpm run serve
+# h5
+npm run dev:h5
+# 微信小程序
+npm run dev:mp-weixin
 ```
-
-### Compiles and minifies for production
-```
-pnpm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
