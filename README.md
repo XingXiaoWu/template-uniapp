@@ -1,17 +1,21 @@
 # moedu-uniapp-template
 
 ## Project setup
-```
+```bash
 npm install
 ```
 ## 运行
-```
+```bash
 # h5
 npm run dev:h5
 # 微信小程序
 npm run dev:mp-weixin
 ```
-
+## uniapp配置查看
+```bash
+# 配置
+https://uniapp.dcloud.io/collocation/pages
+```
 
 ## packagejson备份
 ```json
