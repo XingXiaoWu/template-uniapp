@@ -4,7 +4,7 @@
     <view>
       <text class="title">{{ title }}</text>
     </view>
-    <HelloWorld msg="uniapp" />
+    <HelloWorld msg="uniapp"/>
   </view>
 </template>
 

@@ -15,13 +15,13 @@ module.exports = {
   lintOnSave: 'default',
 //   productionSourceMap 固定 false
   productionSourceMap: false,
-  configureWebpack: {
-    resolve: {
-      alias: {
-        '@': resolve('src'),
-      },
-    },
-  },
+  // configureWebpack: {
+  //   resolve: {
+  //     alias: {
+  //       '@': resolve('src'),
+  //     },
+  //   },
+  // },
   devServer: {
     open: true,
     proxy: proxys,
