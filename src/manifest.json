@@ -7,7 +7,8 @@
   "transformPx": true,
   "h5": {
     "router": {
-      "mode": "hash"
+      "mode": "hash",
+      "base": "./"
     }
   },
   "mp-weixin": {
