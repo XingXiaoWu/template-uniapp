@@ -4,16 +4,14 @@
     <view>
       <text class="title">{{ title }}</text>
     </view>
-    <HelloWorld msg="uniapp" />
+    <HelloWorld msg="uniapp123" />
   </view>
 </template>
 
 <script>
-import HelloWorld from '@/components/HelloWorld/index.vue'
 
 export default {
   components: {
-    HelloWorld,
   },
   data() {
     return {
