@@ -10,7 +10,8 @@
     "dev:h5": "cross-env UNI_PLATFORM=h5 vue-cli-service uni-serve --mode local",
     "dev:mp-weixin": "cross-env UNI_PLATFORM=mp-weixin vue-cli-service uni-build --watch --mode local",
     "info": "node node_modules/@dcloudio/vue-cli-plugin-uni/commands/info.js",
-    "lf": "find . -type f | grep -v \"node_modules\" | xargs dos2unix"
+    "lf": "find . -type f | grep -v \"node_modules\" | xargs dos2unix",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@dcloudio/uni-app-plus": "^2.0.0-32920210927002",
@@ -53,7 +54,8 @@
     "postcss-comment": "^2.0.0",
     "sass": "^1.42.1",
     "sass-loader": "^10.2.0",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "husky": "^7.0.0"
   },
   "browserslist": [
     "Android >= 4.4",
