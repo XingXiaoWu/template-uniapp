@@ -4,7 +4,7 @@
     <view>
       <text class="title">{{ title }}</text>
     </view>
-    <HelloWorld msg="uniapp123" />
+    <HelloWorld :msg="$store.state.user.id" />
   </view>
 </template>
 
