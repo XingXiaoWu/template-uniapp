@@ -17,6 +17,13 @@ npm run dev:mp-weixin
 https://uniapp.dcloud.io/collocation/pages
 ```
 
+## 注意项
+
+### 1.vuex持久化在小程序内无法使用
+
+### 2.template在小程序中无法直接解析挂载在vue上的属性，如$store等
+
+
 ## packagejson备份
 ```json
 {

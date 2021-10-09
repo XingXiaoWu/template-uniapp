@@ -4,22 +4,37 @@
     <view>
       <text class="title">{{ title }}</text>
     </view>
-    <HelloWorld :msg="$store.state.user.id" />
+    <view>
+      <text @click="changeId()">点我修改下面的值</text>
+    </view>
+    <HelloWorld :msg="user.id" />
   </view>
 </template>
 
 <script>
+import { mapState } from 'vuex'
 
 export default {
   components: {
   },
+  computed: {
+    ...mapState({
+      user: (state) => state.user,
+    }),
+  },
   data() {
     return {
       title: 'Hello1',
+      aaa: this.$store.state.user.id,
     }
   },
   onLoad() {},
-  methods: {},
+  methods: {
+    changeId() {
+      console.log(this.$store)
+      this.$store.dispatch('user/setId', '456')
+    },
+  },
 }
 </script>
 
