@@ -1,5 +1,5 @@
 <template>
-  <view class="content">
+  <view class="content flex column ">
     <image class="logo" src="/static/img/logo.png" />
     <view>
       <text class="title">{{ title }}</text>
@@ -25,8 +25,6 @@ export default {
 
 <style lang="scss" scoped>
 .content {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   .logo {
