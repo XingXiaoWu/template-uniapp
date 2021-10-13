@@ -12,6 +12,16 @@
     "router": {
       "mode": "hash",
       "base": "./"
+    },
+    "devServer": {
+      "proxy": {
+        "/ea-elective-course-backend": {
+          "target": "http://yapi.moedu.net/mock/593",
+          "headers": {
+            "uniedu-sso-token": ""
+          }
+        }
+      }
     }
   },
   "mp-weixin": {

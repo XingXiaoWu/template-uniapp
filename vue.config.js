@@ -1,9 +1,8 @@
 const path = require('path')
-const proxys = require('./proxys')
 
-function resolve(dir) {
-  return path.join(__dirname, dir)
-}
+// function resolve(dir) {
+//   return path.join(__dirname, dir)
+// }
 
 module.exports = {
 // uniapp不支持配置publicPath，如果需要配置，请在 manifest.json->h5->router->base 中配置
@@ -22,8 +21,4 @@ module.exports = {
   //     },
   //   },
   // },
-  devServer: {
-    open: true,
-    proxy: proxys,
-  },
 }
