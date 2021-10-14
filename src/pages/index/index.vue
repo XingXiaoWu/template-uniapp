@@ -4,9 +4,8 @@
     <view>
       <text class="title">{{ title }}</text>
     </view>
-    <view>
-      <text @click="changeId()">点我修改下面的值</text>
-    </view>
+    <text class="title" @click="network()">点我发起请求</text>
+    <text class="title" @click="changeId()">点我修改下面的值</text>
     <HelloWorld :msg="user.id" />
   </view>
 </template>
@@ -33,6 +32,13 @@ export default {
     changeId() {
       console.log(this.$store)
       this.$store.dispatch('user/setId', '456')
+    },
+    network() {
+      this.$api.user.test().then((response) => {
+        console.log(`123${response}`)
+      }).catch((error) => {
+        console.log(`345${error}`)
+      })
     },
   },
 }
