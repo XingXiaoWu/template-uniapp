@@ -1,6 +1,6 @@
 // import { Message } from 'element-ui'
+import { Toast } from 'vant'
 import axios from '@/utils/http'
-
 // 移除默认拦截器
 // axios.removeDefaultInterceptors()
 // 兜底处理
@@ -8,7 +8,7 @@ const errorHandle = (error) => {
   // 处理错误,尝试获取error的message展示
   const { message } = error
   //   Message.error(message)
-  console.log(message)
+  Toast.fail(message)
 }
 axios.setErrorHandle(errorHandle)
 

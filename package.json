@@ -11,7 +11,8 @@
     "dev:mp-weixin": "cross-env UNI_PLATFORM=mp-weixin vue-cli-service uni-build --watch --mode local",
     "info": "node node_modules/@dcloudio/vue-cli-plugin-uni/commands/info.js",
     "lf": "find . -type f | grep -v \"node_modules\" | xargs dos2unix",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "postinstall": "patch-package"
   },
   "dependencies": {
     "@dcloudio/uni-app-plus": "^2.0.0-32920210927002",
@@ -26,6 +27,7 @@
     "core-js": "^3.6.5",
     "flyio": "^0.6.2",
     "regenerator-runtime": "^0.12.1",
+    "vant": "2.12.30",
     "vue": "^2.6.11",
     "vuex": "^3.6.2",
     "vuex-persistedstate": "^4.1.0"
@@ -56,7 +58,9 @@
     "jest": "^25.4.0",
     "mini-types": "*",
     "miniprogram-api-typings": "*",
+    "patch-package": "^6.4.7",
     "postcss-comment": "^2.0.0",
+    "postinstall-postinstall": "^2.1.0",
     "sass": "^1.42.1",
     "sass-loader": "^10.2.0",
     "vue-template-compiler": "^2.6.11"
