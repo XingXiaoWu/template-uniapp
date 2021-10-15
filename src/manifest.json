@@ -15,6 +15,12 @@
     },
     "devServer": {
       "proxy": {
+        "/api":{
+          "target": "https://dev.web.moedu.net",
+          "headers": {
+            "uniedu-sso-token": "eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiIxMDAwMDAwMDAwMDAwMjkwMDAxIiwibG9naW5Vc2VybmFtZSI6InRlYWNoZXIxIiwiYWNjb3VudElkIjoxMDAwMDAwMDAwMDAwMjkwMDAyLCJuYW1lIjoi5byA5Y-R6IGU6LCD5a2m5qCh566h55CG5ZGYW-WLv-WIoF0iLCJzY2hvb2xJZCI6MTAwMDAwMDAwLCJzdGF0aW9uSWQiOiJzY2hvb2xBZG1pbiIsInNjaG9vbFR5cGUiOiJTQ0hPT0wiLCJwYXJlbnRFZHVvcmdJZCI6MTAwMDAwMDAwMDA5OTk5MDAxMiwidGVuYW50IjoxMDAwMDAwMDAwMDAwMDMwMDA5LCJhY2NvdW50VHlwZSI6IlRFQUNIRVIiLCJleHAiOjE2MzQzMTc0NDB9.BwcKpeqZRlosixy86jCGxeyU_1BymgePXvvBaitaphJerre2sMwRYhEY-tNb9zPQ2GBfUKYrEoEj43oh9VlVu9T-3rjVLIrlw0JkWeWTdHWjplQ8KY0Le9JyJQfLZfdief7cHRwnfxS5aSOLlLy0wYMY2IHToM8VAwFr6exh3io"
+          }
+        },
         "/ea-elective-course-backend": {
           "target": "http://yapi.moedu.net/mock/593",
           "headers": {

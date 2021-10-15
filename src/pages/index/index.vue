@@ -35,9 +35,16 @@ export default {
     },
     network() {
       this.$api.user.test().then((response) => {
-        console.log(`123${response}`)
+        console.log(`成功${response}`)
       }).catch((error) => {
-        console.log(`345${error}`)
+        console.log(`失败${error}`)
+      })
+    },
+    network2() {
+      this.$api.user.download().then((response) => {
+        console.log(`成功${response}`)
+      }).catch((error) => {
+        console.log(`失败${error}`)
       })
     },
   },
