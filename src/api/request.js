@@ -1,4 +1,6 @@
+// #ifdef H5
 import { Toast } from 'vant'
+// #endif
 import axios from '@/utils/http'
 // 移除默认拦截器
 // axios.removeDefaultInterceptors()
@@ -6,7 +8,10 @@ import axios from '@/utils/http'
 const errorHandle = (error) => {
   // 处理错误,尝试获取error的message展示
   const { message } = error
+  console.log(message)
+  // #ifdef H5
   Toast.fail(message)
+  // #endif
 }
 axios.setErrorHandle(errorHandle)
 
@@ -16,7 +21,7 @@ axios.interceptors.request.use((config) => config)
 axios.interceptors.response.use(
   (response) => {
     // 判断是否为blob类型
-    if (response.config.responseType === 'blob') {
+    if (response.config?.responseType === 'blob') {
       return response
     }
     // 判断success是否为成功，兼容旧的不规范接口
