@@ -5,16 +5,20 @@ import settle from 'axios/lib/core/settle'
 import buildURL from 'axios/lib/helpers/buildURL'
 
 // 自定义适配器 ， 适配uniapp语法
+// #ifdef MP-WEIXIN
 axios.defaults.adapter = (config) => new Promise((resolve, reject) => {
   uni.request({
     method: config.method.toUpperCase(),
-    url: config.baseURL + buildURL(config.url, config.params, config.paramsSerializer),
+    url: process.env.VUE_APP_MP_WEIXIN_DOAMIN
+    + config.baseURL
+    + buildURL(config.url, config.params, config.paramsSerializer),
     header: config.headers,
     data: config.data,
     dataType: config.dataType,
     responseType: config.responseType,
     sslVerify: config.sslVerify,
     complete: function complete(response) {
+      console.log(response)
       const result = {
         data: response.data,
         status: response.statusCode,
@@ -26,5 +30,5 @@ axios.defaults.adapter = (config) => new Promise((resolve, reject) => {
     },
   })
 })
-
+// #endif
 export default axios
