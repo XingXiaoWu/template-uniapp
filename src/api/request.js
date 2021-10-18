@@ -1,7 +1,11 @@
 // #ifdef H5
-import { Toast } from 'vant'
+// import { Toast } from 'vant'
+// #endif
+// #ifdef MP-WEIXIN
+import Toast from '@/wxcomponents/vant/toast/index'
 // #endif
 import axios from '@/utils/http'
+
 // 移除默认拦截器
 // axios.removeDefaultInterceptors()
 // 兜底处理
@@ -10,6 +14,9 @@ const errorHandle = (error) => {
   const { message } = error
   console.log(message)
   // #ifdef H5
+  Toast.fail(message)
+  // #endif
+  // #ifdef MP-WEIXIN
   Toast.fail(message)
   // #endif
 }
