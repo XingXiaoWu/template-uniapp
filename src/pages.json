@@ -19,7 +19,8 @@
   "easycom": {
     "autoscan": true,
     "custom": {
-      "^(.*)": "@/components/$1/index.vue"
+      "^(.*)": "@/components/$1/index.vue",
+      "van-(.*)": "@/wxcomponents/vant/$1/index.vue"
     }
   }
 }

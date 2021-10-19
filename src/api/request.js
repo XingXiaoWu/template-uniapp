@@ -2,7 +2,7 @@
 // import { Toast } from 'vant'
 // #endif
 // #ifdef MP-WEIXIN
-import Toast from '@/wxcomponents/vant/toast/index'
+import Toast from '@/wxcomponents/vant/toast/toast'
 // #endif
 import axios from '@/utils/http'
 

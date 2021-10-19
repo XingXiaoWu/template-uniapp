@@ -12,7 +12,8 @@
     "info": "node node_modules/@dcloudio/vue-cli-plugin-uni/commands/info.js",
     "lf": "find . -type f | grep -v \"node_modules\" | xargs dos2unix",
     "prepare": "husky install",
-    "postinstall": "patch-package"
+    "postinstall": "patch-package",
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "@dcloudio/uni-app-plus": "^2.0.0-32920210927002",

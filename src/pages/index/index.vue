@@ -1,5 +1,6 @@
 <template>
   <view class="content flex column ">
+    <van-toast id="van-toast" />
     <image class="logo" src="/static/img/logo.png" />
     <view>
       <text class="title">{{ title }}</text>
