@@ -1,9 +1,3 @@
-// #ifdef H5
-// import { Toast } from 'vant'
-// #endif
-// #ifdef MP-WEIXIN
-import Toast from '@/wxcomponents/vant/toast/toast'
-// #endif
 import axios from '@/utils/http'
 
 // 移除默认拦截器
@@ -12,13 +6,10 @@ import axios from '@/utils/http'
 const errorHandle = (error) => {
   // 处理错误,尝试获取error的message展示
   const { message } = error
-  console.log(message)
-  // #ifdef H5
-  Toast.fail(message)
-  // #endif
-  // #ifdef MP-WEIXIN
-  Toast.fail(message)
-  // #endif
+  uni.showToast({
+    title: message,
+    icon: 'error',
+  })
 }
 axios.setErrorHandle(errorHandle)
 

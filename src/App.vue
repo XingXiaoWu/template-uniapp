@@ -1,8 +1,3 @@
-<template>
-  <view class="content flex column ">
-    <van-toast id="van-toast" />
-  </view>
-</template>
 <script>
 // import Toast from '@/wxcomponents/vant/weapp/dist/toast/toast'
 
