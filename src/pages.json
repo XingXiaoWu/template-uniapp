@@ -13,14 +13,12 @@
     "navigationBarBackgroundColor": "#F8F8F8",
     "backgroundColor": "#F8F8F8",
     "usingComponents": {
-      "van-toast": "/wxcomponents/vant/toast/index"
     }
   },
   "easycom": {
     "autoscan": true,
     "custom": {
-      "^(.*)": "@/components/$1/index.vue",
-      "van-(.*)": "@/wxcomponents/vant/$1/index.vue"
+      "^(.*)": "@/components/$1/index.vue"
     }
   }
 }
