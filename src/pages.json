@@ -18,7 +18,8 @@
   "easycom": {
     "autoscan": true,
     "custom": {
-      "^(.*)": "@/components/$1/index.vue"
+      "Moedu(.*)": "@/components/Moedu$1.vue",
+      "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
     }
   }
 }

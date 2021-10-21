@@ -6,7 +6,13 @@
     </view>
     <text class="title" @click="network()">点我发起请求</text>
     <text class="title" @click="changeId()">点我修改下面的值</text>
-    <HelloWorld :msg="user.id" />
+    <MoeduHelloWorld :msg="user.id" />
+    <u-button >默认按钮</u-button>
+    <u-button type="primary">主要按钮</u-button>
+    <u-button type="success">成功按钮</u-button>
+    <u-button type="info">信息按钮</u-button>
+    <u-button type="warning">警告按钮</u-button>
+    <u-button type="error">危险按钮</u-button>
   </view>
 </template>
 
@@ -31,7 +37,7 @@ export default {
   methods: {
     changeId() {
       console.log(this.$store)
-      this.$store.dispatch('user/setId', '456')
+      this.$store.dispatch('user/setId', Math.random(100))
     },
     network() {
       this.$api.user.test().then((response) => {

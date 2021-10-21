@@ -23,6 +23,7 @@ https://uniapp.dcloud.io/collocation/pages
 
 ### 2.template在小程序中无法直接解析挂载在vue上的属性，如$store等（小程序的模板上下文中，并不是从this.上去拿数据，是从this.data上拿数据，未验证）
 
+### 3.Components中的公共组件，需要以Moedu为前缀命名
 
 ## packagejson备份
 ```json
