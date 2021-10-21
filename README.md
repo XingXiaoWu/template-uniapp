@@ -25,6 +25,14 @@ https://uniapp.dcloud.io/collocation/pages
 
 ### 3.Components中的公共组件，需要以Moedu为前缀命名
 
+### 4.Jenkins配置
+```bash
+npm install --registry=http://npm.ckmooc.com
+rm -rf ./dist
+npm run build:h5
+echo "${Build_on_tag}#${BUILD_TIMESTAMP}" >> ./dist/build/h5/version.html
+cp -rf ./dist/build/h5 ./docker/dist
+```
 ## packagejson备份
 ```json
 {
