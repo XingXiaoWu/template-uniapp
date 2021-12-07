@@ -7,12 +7,9 @@
     <text class="title" @click="network()">点我发起请求</text>
     <text class="title" @click="changeId()">点我修改下面的值</text>
     <XingHelloWorld :msg="user.id" />
-    <u-button >默认按钮</u-button>
-    <u-button type="primary">主要按钮</u-button>
-    <u-button type="success">成功按钮</u-button>
-    <u-button type="info">信息按钮</u-button>
-    <u-button type="warning">警告按钮</u-button>
-    <u-button type="error">危险按钮</u-button>
+    <uni-badge text="1"/>
+    <uni-badge text="2" type="success" @click="bindClick"/>
+    <uni-badge text="3" type="primary" :inverted="true"/>
   </view>
 </template>
 

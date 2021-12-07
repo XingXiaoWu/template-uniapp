@@ -14,6 +14,7 @@ module.exports = {
   lintOnSave: 'default',
 //   productionSourceMap 固定 false
   productionSourceMap: false,
+  transpileDependencies:['@dcloudio/uni-ui']
   // configureWebpack: {
   //   resolve: {
   //     alias: {
