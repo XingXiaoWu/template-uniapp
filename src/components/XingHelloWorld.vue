@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'MoeduHelloWorld',
+  name: 'XingHelloWorld',
   props: {
     msg: String,
   },

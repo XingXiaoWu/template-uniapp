@@ -1,5 +1,5 @@
 {
-  "name": "moedu-uniapp-template",
+  "name": "template-uniapp",
   "appid": "",
   "description": "",
   "versionName": "1.0.0",
@@ -16,15 +16,9 @@
     "devServer": {
       "proxy": {
         "/api":{
-          "target": "https://dev.web.moedu.net",
+          "target": "https://www.baidu.com",
           "headers": {
-            "uniedu-sso-token": "eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiIxMDAwMDAwMDAwMDAzMjIwMDI0IiwibG9naW5Vc2VybmFtZSI6Inh1ZXNoZW5nMyIsImFjY291bnRJZCI6MTAwMDAwMDAwMDAwMzA5ODAyNCwibmFtZSI6IuWtpueUnzMiLCJzY2hvb2xJZCI6MTAwMDAwMDAwLCJzdGF0aW9uSWQiOiJzdHVkZW50Iiwic2Nob29sVHlwZSI6IlNDSE9PTCIsInBhcmVudEVkdW9yZ0lkIjoxMDAwMDAwMDAwMDk5OTkwMDEyLCJ0ZW5hbnQiOjEwMDAwMDAwMDAwMDAwMzAwMDksImFjY291bnRUeXBlIjoiU1RVREVOVCIsImV4cCI6MTYzNDU3NTMwOX0.HKZhrElBGperHLrujJnT0u1ye9xSJaOSZTKZRDMpzbIlnu9EzF74kyYxRdDk1Xn5nu2U5dR5-LnMKGgN3E5kbI0G0G11Zas8enzlXhYCxL7FZvwKcryET_ABArhB5x-3XvO79EtFJcccmy95OxbPMeoMdmu82XSqW7ybEV-cjUk"
-          }
-        },
-        "/ea-elective-course-backend": {
-          "target": "http://yapi.moedu.net/mock/593",
-          "headers": {
-            "uniedu-sso-token": ""
+            "token": ""
           }
         }
       }

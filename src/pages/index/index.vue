@@ -6,7 +6,7 @@
     </view>
     <text class="title" @click="network()">点我发起请求</text>
     <text class="title" @click="changeId()">点我修改下面的值</text>
-    <MoeduHelloWorld :msg="user.id" />
+    <XingHelloWorld :msg="user.id" />
     <u-button >默认按钮</u-button>
     <u-button type="primary">主要按钮</u-button>
     <u-button type="success">成功按钮</u-button>

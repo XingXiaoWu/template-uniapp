@@ -1,6 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
-// 由于@moedu/axios引用了axios，项目中没必要再次引用，因此此处忽略
-import axios from '@moedu/axios'
+// 由于@xing.wu/axios引用了axios，项目中没必要再次引用，因此此处忽略
+import axios from '@xing.wu/axios'
 import settle from 'axios/lib/core/settle'
 import buildURL from 'axios/lib/helpers/buildURL'
 
